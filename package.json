@@ -1,0 +1,54 @@
+{
+  "name": "workfrom",
+  "version": "1.0.0",
+  "description": "Workfrom.co API client for Node.js and the browser",
+  "author": {
+    "name": "Kyle Shockey",
+    "email": "kyle.shockey1@gmail.com",
+    "url": "http://kyleshockey.com/"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "workfrom",
+    "api"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "babel-eslint": "^4.1.8",
+    "chai": "^3.5.0",
+    "del": "^2.0.2",
+    "eslint": "^2.1.0",
+    "eslint-config-airbnb": "^0.13.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "rules": {
+      "new-cap": 0
+    },
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "kyleshockey/workfrom",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "dependencies": {
+    "httpplease": "^0.16.4"
+  }
+}
