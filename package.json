@@ -21,7 +21,6 @@
     "chai": "^3.5.0",
     "del": "^2.0.2",
     "eslint": "^2.1.0",
-    "eslint-config-airbnb": "^0.13.0",
     "eslint-plugin-babel": "^3.1.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.1.0",
@@ -37,7 +36,8 @@
   "eslintConfig": {
     "extends": "xo-space",
     "rules": {
-      "new-cap": 0
+      "new-cap": 0,
+      "no-unused-vars": 1
     },
     "env": {
       "mocha": true
