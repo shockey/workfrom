@@ -6,4 +6,4 @@ var wf = Workfrom({
   appid: 'abcdef1234567890'
 });
 
-wf.places.get({ slug: 'venice-grind' }).then(res => console.log(res))
+wf.places.get({slug: 'venice-grind'}).then(res => console.log(res));
