@@ -33,24 +33,25 @@ wf.places.get({ id: 16 }).then(place => { /* do stuff */ });
 wf.places.get({ slug: 'venice-grind' }).then(place => { /* do stuff */ });
 ```
 
-Parameters:
-- `id`: _String || Integer_. Required, but mutually exclusive with `slug`.
-- `slug`: _String_. Required, but mutually exclusive with `id`.
+Parameter | Type | Required? | Notes
+--- | --- | ------
+`id` | _Integer_ or _String_ | yes* | mutually exclusive with `slug`
+`slug` | _String_            | yes* | mutually exclusive with `id`
+
 
 #### search
 
 You can search by name:
 
 ```js
-wf.places.search({ query: 'cafe', limit: 10 }).then(results => { /* do stuff */ });
+wf.places.search({ query: 'cafe', limit: 10, page: 2 }).then(results => { /* do stuff */ });
 ```
 
-Parameters:
-- `query`: _String_. Required.
-- `limit`: _Integer_. Optional, defaults to `20`.
-
-
-
+Parameter | Type | Required? | Notes
+--- | --- | ------
+`query`   | _String_  | yes | mutually exclusive with `slug`
+`limit`   | _Integer_ | no  | defaults to `20`
+`page`    | _Integer_ | no  | defaults to `1`
 
 
 [npm-image]: https://badge.fury.io/js/workfrom.svg
