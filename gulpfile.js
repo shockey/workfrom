@@ -47,6 +47,7 @@ gulp.task('test', ['pre-test'], function (cb) {
     })
     .pipe(istanbul.writeReports())
     .on('end', function () {
+      console.log('mocha done');
       cb(mochaErr);
     });
 });

@@ -16,7 +16,7 @@
     "api"
   ],
   "devDependencies": {
-    "babel-core": "^5.5.0",
+    "babel-core": "^5.8.38",
     "babel-eslint": "^4.1.8",
     "chai": "^3.5.0",
     "del": "^2.0.2",
@@ -50,6 +50,8 @@
     "test": "gulp"
   },
   "dependencies": {
-    "httpplease": "^0.16.4"
+    "lodash": "^4.13.1",
+    "request-promise": "^3.0.0",
+    "require-dir": "^0.3.0"
   }
 }

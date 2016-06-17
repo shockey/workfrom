@@ -1,10 +1,12 @@
 # workfrom [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Workfrom.co API client for Node.js
+
+
+## Workfrom Places API
 
 ## Installation
 
 ```sh
-$ npm install --save workfrom
+$ npm i --save workfrom
 ```
 
 ## Usage
@@ -16,9 +18,8 @@ let wf = Workfrom({
   id: 'abcdef1234567890'
 });
 ```
-## License
 
- © [Kyle Shockey](http://kyleshockey.com/)
+
 
 
 [npm-image]: https://badge.fury.io/js/workfrom.svg
