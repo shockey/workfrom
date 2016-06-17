@@ -1,7 +1,7 @@
 # workfrom [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
+> [Workfrom.co](https://workfrom.co/) API client for Node.js
 
-## Workfrom Places API
 
 ## Installation
 
@@ -14,7 +14,7 @@ $ npm i --save workfrom
 #### Create a client instance
 
 ```js
-import Workfrom from 'workfrom';
+import Workfrom from 'workfrom'; // or: var Workfrom = require('workfrom')
 
 let wf = Workfrom({
   id: 'abcdef1234567890' // replace with your Workfrom appid
@@ -23,7 +23,7 @@ let wf = Workfrom({
 
 ### Places
 
-##### get
+#### get
 
 You can get by id, or by slug:
 
@@ -37,17 +37,17 @@ Parameters:
 - `id`: _String || Integer_. Required, but mutually exclusive with `slug`.
 - `slug`: _String_. Required, but mutually exclusive with `id`.
 
-##### search
+#### search
 
 You can search by name:
 
 ```js
-wf.places.search({query: 'cafe', limit: 10}).then(results => { /* do stuff */ });
+wf.places.search({ query: 'cafe', limit: 10 }).then(results => { /* do stuff */ });
 ```
 
 Parameters:
 - `query`: _String_. Required.
-- `limit`: _Integer_. Optional, defaults to `20`. 
+- `limit`: _Integer_. Optional, defaults to `20`.
 
 
 
