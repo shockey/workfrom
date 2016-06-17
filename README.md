@@ -9,15 +9,46 @@
 $ npm i --save workfrom
 ```
 
-## Usage
+## Documentation
+
+#### Create a client instance
 
 ```js
 import Workfrom from 'workfrom';
 
 let wf = Workfrom({
-  id: 'abcdef1234567890'
+  id: 'abcdef1234567890' // replace with your Workfrom appid
 });
 ```
+
+### Places
+
+##### get
+
+You can get by id, or by slug:
+
+```js
+wf.places.get({ id: 16 }).then(place => { /* do stuff */ });
+
+wf.places.get({ slug: 'venice-grind' }).then(place => { /* do stuff */ });
+```
+
+Parameters:
+- `id`: _String || Integer_. Required, but mutually exclusive with `slug`.
+- `slug`: _String_. Required, but mutually exclusive with `id`.
+
+##### search
+
+You can search by name:
+
+```js
+wf.places.search({query: 'cafe', limit: 10}).then(results => { /* do stuff */ });
+```
+
+Parameters:
+- `query`: _String_. Required.
+- `limit`: _Integer_. Optional, defaults to `20`. 
+
 
 
 
