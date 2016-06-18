@@ -3,15 +3,15 @@
 > [Workfrom.co](https://workfrom.co/) API client for Node.js
 
 
-## Installation
+## Getting started
+
+> Install via npm
 
 ```sh
 $ npm i --save workfrom
 ```
 
-## Documentation
-
-#### Create a client instance
+> Create a client instance
 
 ```js
 import Workfrom from 'workfrom'; // or: var Workfrom = require('workfrom')
@@ -20,6 +20,8 @@ let wf = Workfrom({
   id: 'abcdef1234567890' // replace with your Workfrom appid
 });
 ```
+
+## Documentation
 
 ### Places
 
