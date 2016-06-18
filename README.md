@@ -78,7 +78,7 @@ Parameter | Type | Required? | Notes
 `lat`           | _String_              | yes*  | required if `postalCode` is omitted
 `long`          | _String_              | yes*  | required if `postalCode` is omitted
 `postalCode`    | _Integer_ or _String_ | yes*  | required if `lat` & `long` are omitted
-`radius`        | _String_              | no    | in miles, defaults to `5`; not allowed alongside `postalCode`
+`radius`        | _Integer_              | no    | in miles, defaults to `5`; not allowed alongside `postalCode`
 `limit`         | _Integer_             | no    | defaults to `20`; not allowed alongside `lat`/`long`
 `page`          | _Integer_             | no    | defaults to `1`; not allowed alongside `lat`/`long`
 
