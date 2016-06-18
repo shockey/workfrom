@@ -23,9 +23,11 @@ let wf = Workfrom({
 
 ## Documentation
 
-### Places
+Methods are namespaced under endpoints, which logically separate things you can interact with.
 
-#### get
+Generally, the interface is laid out as `[endpoint].[method]`.
+
+#### places.get
 
 > Get information on a specific place
 
@@ -41,7 +43,7 @@ Parameter | Type | Required? | Notes
 `slug` | _String_            | yes* | mutually exclusive with `id`
 
 
-#### search
+#### places.search
 
 > Search for places by name
 
