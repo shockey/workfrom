@@ -1,6 +1,6 @@
 {
   "name": "workfrom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Workfrom.co API client for Node.js and the browser",
   "author": {
     "name": "Kyle Shockey",
