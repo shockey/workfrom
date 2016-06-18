@@ -44,14 +44,14 @@ Parameter | Type | Required? | Notes
 You can search by name:
 
 ```js
-wf.places.search({ query: 'cafe', limit: 10, page: 2 }).then(results => { /* do stuff */ });
+wf.places.search({ name: 'cafe', limit: 10, page: 2 }).then(results => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
 --- | --- | --- | ------
-`query`   | _String_  | yes | mutually exclusive with `slug`
-`limit`   | _Integer_ | no  | defaults to `20`
-`page`    | _Integer_ | no  | defaults to `1`
+`name`  | _String_  | yes | mutually exclusive with `slug`
+`limit` | _Integer_ | no  | defaults to `20`
+`page`  | _Integer_ | no  | defaults to `1`
 
 
 [npm-image]: https://badge.fury.io/js/workfrom.svg
