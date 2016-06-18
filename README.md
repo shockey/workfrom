@@ -28,7 +28,7 @@ let wf = Workfrom({
 > Get information on a specific place
 
 ```js
-wf.places.get({ id: 16 }).then(place => { /* do stuff */ });
+wf.places.get({ id: 9075 }).then(place => { /* do stuff */ });
 
 wf.places.get({ slug: 'venice-grind' }).then(place => { /* do stuff */ });
 ```
@@ -44,7 +44,7 @@ Parameter | Type | Required? | Notes
 > Search for places by name
 
 ```js
-wf.places.search({ name: 'cafe', limit: 10, page: 2 }).then(results => { /* do stuff */ });
+wf.places.search({ name: 'Starbucks', limit: 10, page: 2 }).then(results => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
@@ -53,6 +53,10 @@ Parameter | Type | Required? | Notes
 `limit` | _Integer_ | no  | defaults to `20`
 `page`  | _Integer_ | no  | defaults to `1`
 
+
+## Contributing
+
+Pull requests are welcome, provided that documentation and tests are updated to match any changes made.
 
 [npm-image]: https://badge.fury.io/js/workfrom.svg
 [npm-url]: https://npmjs.org/package/workfrom
