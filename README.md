@@ -34,7 +34,7 @@ wf.places.get({ slug: 'venice-grind' }).then(place => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
---- | --- | ------
+--- | --- | --- | ------
 `id` | _Integer_ or _String_ | yes* | mutually exclusive with `slug`
 `slug` | _String_            | yes* | mutually exclusive with `id`
 
@@ -48,7 +48,7 @@ wf.places.search({ query: 'cafe', limit: 10, page: 2 }).then(results => { /* do 
 ```
 
 Parameter | Type | Required? | Notes
---- | --- | ------
+--- | --- | --- | ------
 `query`   | _String_  | yes | mutually exclusive with `slug`
 `limit`   | _Integer_ | no  | defaults to `20`
 `page`    | _Integer_ | no  | defaults to `1`
