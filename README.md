@@ -2,6 +2,7 @@
 
 > [Workfrom.co](https://workfrom.co/) API client for Node.js
 
+`workfrom` is a high-level library for interacting with the Workfrom API.
 
 ## Getting started
 
