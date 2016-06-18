@@ -25,7 +25,7 @@ let wf = Workfrom({
 
 #### get
 
-You can get by id, or by slug:
+> Get information on a specific place
 
 ```js
 wf.places.get({ id: 16 }).then(place => { /* do stuff */ });
@@ -41,7 +41,7 @@ Parameter | Type | Required? | Notes
 
 #### search
 
-You can search by name:
+> Search for places by name
 
 ```js
 wf.places.search({ name: 'cafe', limit: 10, page: 2 }).then(results => { /* do stuff */ });
@@ -49,7 +49,7 @@ wf.places.search({ name: 'cafe', limit: 10, page: 2 }).then(results => { /* do s
 
 Parameter | Type | Required? | Notes
 --- | --- | --- | ------
-`name`  | _String_  | yes | mutually exclusive with `slug`
+`name`  | _String_  | yes |
 `limit` | _Integer_ | no  | defaults to `20`
 `page`  | _Integer_ | no  | defaults to `1`
 
