@@ -22,6 +22,7 @@ let wf = Workfrom({
 });
 ```
 
+
 ## Documentation
 
 Methods are namespaced under endpoints, which logically separate things you can interact with.
@@ -43,7 +44,6 @@ Parameter | Type | Required? | Notes
 `id` | _Integer_ or _String_ | yes* | mutually exclusive with `slug`
 `slug` | _String_            | yes* | mutually exclusive with `id`
 
-
 #### places.search
 
 > Search for places by name
@@ -57,6 +57,25 @@ Parameter | Type | Required? | Notes
 `name`  | _String_  | yes |
 `limit` | _Integer_ | no  | defaults to `20`
 `page`  | _Integer_ | no  | defaults to `1`
+
+#### places.near
+
+> Search for places near a location
+
+```js
+wf.places.near({ postalCode: 94104, limit: 10, page: 1 }).then(results => { /* do stuff */ });
+
+wf.places.near({ lat: '37.783575', long: '-122.409048', radius: 2 }).then(results => { /* do stuff */ });
+```
+
+Parameter | Type | Required? | Notes
+--- | --- | --- | ------
+`lat`           | _String_              | yes*  | required if `postalCode` is omitted
+`long`          | _String_              | yes*  | required if `postalCode` is omitted
+`postalCode`    | _Integer_ or _String_ | yes*  | required if `lat` & `long` are omitted
+`radius`        | _String_              | no    | in miles, defaults to `5`; not allowed alongside `postalCode`
+`limit`         | _Integer_             | no    | defaults to `20`; not allowed alongside `lat`/`long`
+`page`          | _Integer_             | no    | defaults to `1`; not allowed alongside `lat`/`long`
 
 
 ## Contributing
