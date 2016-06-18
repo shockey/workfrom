@@ -34,9 +34,11 @@ Generally, the interface is laid out as `[endpoint].[method]`.
 > Get information on a specific place
 
 ```js
-wf.places.get({ id: 9075 }).then(place => { /* do stuff */ });
+wf.places.get({ id: 9075 })
+  .then(place => { /* do stuff */ });
 
-wf.places.get({ slug: 'venice-grind' }).then(place => { /* do stuff */ });
+wf.places.get({ slug: 'venice-grind' })
+  .then(place => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
@@ -49,7 +51,8 @@ Parameter | Type | Required? | Notes
 > Search for places by name
 
 ```js
-wf.places.search({ name: 'Starbucks', limit: 10, page: 2 }).then(results => { /* do stuff */ });
+wf.places.search({ name: 'Starbucks', limit: 10, page: 2 })
+  .then(results => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
@@ -63,9 +66,11 @@ Parameter | Type | Required? | Notes
 > Search for places near a location
 
 ```js
-wf.places.near({ postalCode: 94104, limit: 10, page: 1 }).then(results => { /* do stuff */ });
+wf.places.near({ postalCode: 94104, limit: 10, page: 1 })
+  .then(results => { /* do stuff */ });
 
-wf.places.near({ lat: '37.783575', long: '-122.409048', radius: 2 }).then(results => { /* do stuff */ });
+wf.places.near({ lat: '37.783575', long: '-122.409048', radius: 2 })
+  .then(results => { /* do stuff */ });
 ```
 
 Parameter | Type | Required? | Notes
