@@ -1,8 +1,8 @@
-# workfrom [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# workfrom.js [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > [Workfrom.co](https://workfrom.co/) API client for Node.js
 
-`workfrom` is a high-level library for interacting with the Workfrom API.
+`workfrom.js` is a high-level library for interacting with the Workfrom API.
 
 Works on all major Node versions- we test `0.10`, `0.12`, `4.0`, `5.0`, and `6.0`.
 
