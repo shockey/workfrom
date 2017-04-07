@@ -20,7 +20,7 @@ $ npm i --save workfrom
 import Workfrom from 'workfrom'; // or: var Workfrom = require('workfrom')
 
 let wf = Workfrom({
-  id: 'abcdef1234567890' // replace with your Workfrom appid
+  appid: 'abcdef1234567890' // replace with your Workfrom appid
 });
 ```
 
